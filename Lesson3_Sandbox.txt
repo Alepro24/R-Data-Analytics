@@ -1,0 +1,649 @@
+
+R version 4.2.2 (2022-10-31) -- "Innocent and Trusting"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.79 (8160) aarch64-apple-darwin20]
+
+[History restored from /Users/alejandropena/.Rapp.history]
+
+> 
+> install.packages("tidyverse")
+--- Please select a CRAN mirror for use in this session ---
+also installing the dependencies ‘colorspace’, ‘sys’, ‘bit’, ‘ps’, ‘sass’, ‘cachem’, ‘memoise’, ‘digest’, ‘base64enc’, ‘fastmap’, ‘farver’, ‘labeling’, ‘munsell’, ‘RColorBrewer’, ‘viridisLite’, ‘rappdirs’, ‘rematch’, ‘askpass’, ‘bit64’, ‘prettyunits’, ‘processx’, ‘evaluate’, ‘highr’, ‘yaml’, ‘xfun’, ‘bslib’, ‘htmltools’, ‘jquerylib’, ‘tinytex’, ‘backports’, ‘ellipsis’, ‘generics’, ‘glue’, ‘assertthat’, ‘blob’, ‘DBI’, ‘lifecycle’, ‘R6’, ‘tidyselect’, ‘vctrs’, ‘withr’, ‘data.table’, ‘gtable’, ‘isoband’, ‘scales’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘curl’, ‘ids’, ‘rematch2’, ‘cpp11’, ‘pkgconfig’, ‘mime’, ‘openssl’, ‘timechange’, ‘fansi’, ‘utf8’, ‘clipr’, ‘vroom’, ‘tzdb’, ‘progress’, ‘callr’, ‘fs’, ‘knitr’, ‘rmarkdown’, ‘selectr’, ‘stringi’, ‘broom’, ‘cli’, ‘crayon’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘ggplot2’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘jsonlite’, ‘lubridate’, ‘magrittr’, ‘modelr’, ‘pillar’, ‘purrr’, ‘readr’, ‘readxl’, ‘reprex’, ‘rlang’, ‘rstudioapi’, ‘rvest’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘xml2’
+
+
+  There is a binary version available but the source version is later:
+     binary source needs_compilation
+sass  0.4.3  0.4.4              TRUE
+
+Do you want to install from sources the package which needs compilation? (Yes/no/cancel) cancel
+Error in install.packages("tidyverse") : Cancelled by user
+> 
+> install.packages("tidyverse")
+also installing the dependencies ‘colorspace’, ‘sys’, ‘bit’, ‘ps’, ‘sass’, ‘cachem’, ‘memoise’, ‘digest’, ‘base64enc’, ‘fastmap’, ‘farver’, ‘labeling’, ‘munsell’, ‘RColorBrewer’, ‘viridisLite’, ‘rappdirs’, ‘rematch’, ‘askpass’, ‘bit64’, ‘prettyunits’, ‘processx’, ‘evaluate’, ‘highr’, ‘yaml’, ‘xfun’, ‘bslib’, ‘htmltools’, ‘jquerylib’, ‘tinytex’, ‘backports’, ‘ellipsis’, ‘generics’, ‘glue’, ‘assertthat’, ‘blob’, ‘DBI’, ‘lifecycle’, ‘R6’, ‘tidyselect’, ‘vctrs’, ‘withr’, ‘data.table’, ‘gtable’, ‘isoband’, ‘scales’, ‘gargle’, ‘uuid’, ‘cellranger’, ‘curl’, ‘ids’, ‘rematch2’, ‘cpp11’, ‘pkgconfig’, ‘mime’, ‘openssl’, ‘timechange’, ‘fansi’, ‘utf8’, ‘clipr’, ‘vroom’, ‘tzdb’, ‘progress’, ‘callr’, ‘fs’, ‘knitr’, ‘rmarkdown’, ‘selectr’, ‘stringi’, ‘broom’, ‘cli’, ‘crayon’, ‘dbplyr’, ‘dplyr’, ‘dtplyr’, ‘forcats’, ‘ggplot2’, ‘googledrive’, ‘googlesheets4’, ‘haven’, ‘hms’, ‘httr’, ‘jsonlite’, ‘lubridate’, ‘magrittr’, ‘modelr’, ‘pillar’, ‘purrr’, ‘readr’, ‘readxl’, ‘reprex’, ‘rlang’, ‘rstudioapi’, ‘rvest’, ‘stringr’, ‘tibble’, ‘tidyr’, ‘xml2’
+
+
+  There is a binary version available but the source version is later:
+     binary source needs_compilation
+sass  0.4.3  0.4.4              TRUE
+
+Do you want to install from sources the package which needs compilation? (Yes/no/cancel) yes
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/colorspace_2.0-3.tgz'
+Content type 'application/x-gzip' length 2622583 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/sys_3.4.1.tgz'
+Content type 'application/x-gzip' length 50670 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/bit_4.0.5.tgz'
+Content type 'application/x-gzip' length 1233784 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/ps_1.7.2.tgz'
+Content type 'application/x-gzip' length 309645 bytes (302 KB)
+==================================================
+downloaded 302 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/cachem_1.0.6.tgz'
+Content type 'application/x-gzip' length 67650 bytes (66 KB)
+==================================================
+downloaded 66 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/memoise_2.0.1.tgz'
+Content type 'application/x-gzip' length 47932 bytes (46 KB)
+==================================================
+downloaded 46 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/digest_0.6.30.tgz'
+Content type 'application/x-gzip' length 273324 bytes (266 KB)
+==================================================
+downloaded 266 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/base64enc_0.1-3.tgz'
+Content type 'application/x-gzip' length 33622 bytes (32 KB)
+==================================================
+downloaded 32 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/fastmap_1.1.0.tgz'
+Content type 'application/x-gzip' length 178206 bytes (174 KB)
+==================================================
+downloaded 174 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/farver_2.1.1.tgz'
+Content type 'application/x-gzip' length 1933421 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/labeling_0.4.2.tgz'
+Content type 'application/x-gzip' length 60132 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/munsell_0.5.0.tgz'
+Content type 'application/x-gzip' length 241653 bytes (235 KB)
+==================================================
+downloaded 235 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/RColorBrewer_1.1-3.tgz'
+Content type 'application/x-gzip' length 52946 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/viridisLite_0.4.1.tgz'
+Content type 'application/x-gzip' length 1297181 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rappdirs_0.3.3.tgz'
+Content type 'application/x-gzip' length 46800 bytes (45 KB)
+==================================================
+downloaded 45 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rematch_1.0.1.tgz'
+Content type 'application/x-gzip' length 12231 bytes (11 KB)
+==================================================
+downloaded 11 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/askpass_1.1.tgz'
+Content type 'application/x-gzip' length 22910 bytes (22 KB)
+==================================================
+downloaded 22 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/bit64_4.0.5.tgz'
+Content type 'application/x-gzip' length 560611 bytes (547 KB)
+==================================================
+downloaded 547 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/prettyunits_1.1.1.tgz'
+Content type 'application/x-gzip' length 34701 bytes (33 KB)
+==================================================
+downloaded 33 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/processx_3.8.0.tgz'
+Content type 'application/x-gzip' length 312935 bytes (305 KB)
+==================================================
+downloaded 305 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/evaluate_0.18.tgz'
+Content type 'application/x-gzip' length 77927 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/highr_0.9.tgz'
+Content type 'application/x-gzip' length 38765 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/yaml_2.3.6.tgz'
+Content type 'application/x-gzip' length 216719 bytes (211 KB)
+==================================================
+downloaded 211 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/xfun_0.35.tgz'
+Content type 'application/x-gzip' length 404092 bytes (394 KB)
+==================================================
+downloaded 394 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/bslib_0.4.1.tgz'
+Content type 'application/x-gzip' length 4787023 bytes (4.6 MB)
+==================================================
+downloaded 4.6 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/htmltools_0.5.3.tgz'
+Content type 'application/x-gzip' length 341242 bytes (333 KB)
+==================================================
+downloaded 333 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/jquerylib_0.1.4.tgz'
+Content type 'application/x-gzip' length 526050 bytes (513 KB)
+==================================================
+downloaded 513 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tinytex_0.42.tgz'
+Content type 'application/x-gzip' length 133321 bytes (130 KB)
+==================================================
+downloaded 130 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/backports_1.4.1.tgz'
+Content type 'application/x-gzip' length 100793 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/ellipsis_0.3.2.tgz'
+Content type 'application/x-gzip' length 38646 bytes (37 KB)
+==================================================
+downloaded 37 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/generics_0.1.3.tgz'
+Content type 'application/x-gzip' length 78238 bytes (76 KB)
+==================================================
+downloaded 76 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/glue_1.6.2.tgz'
+Content type 'application/x-gzip' length 154637 bytes (151 KB)
+==================================================
+downloaded 151 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/assertthat_0.2.1.tgz'
+Content type 'application/x-gzip' length 52186 bytes (50 KB)
+==================================================
+downloaded 50 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/blob_1.2.3.tgz'
+Content type 'application/x-gzip' length 45895 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/DBI_1.1.3.tgz'
+Content type 'application/x-gzip' length 754245 bytes (736 KB)
+==================================================
+downloaded 736 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/lifecycle_1.0.3.tgz'
+Content type 'application/x-gzip' length 122947 bytes (120 KB)
+==================================================
+downloaded 120 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/R6_2.5.1.tgz'
+Content type 'application/x-gzip' length 82518 bytes (80 KB)
+==================================================
+downloaded 80 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tidyselect_1.2.0.tgz'
+Content type 'application/x-gzip' length 220687 bytes (215 KB)
+==================================================
+downloaded 215 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/vctrs_0.5.1.tgz'
+Content type 'application/x-gzip' length 1844185 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/withr_2.5.0.tgz'
+Content type 'application/x-gzip' length 229478 bytes (224 KB)
+==================================================
+downloaded 224 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/data.table_1.14.6.tgz'
+Content type 'application/x-gzip' length 2352436 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/gtable_0.3.1.tgz'
+Content type 'application/x-gzip' length 159185 bytes (155 KB)
+==================================================
+downloaded 155 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/isoband_0.2.6.tgz'
+Content type 'application/x-gzip' length 3291117 bytes (3.1 MB)
+==================================================
+downloaded 3.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/scales_1.2.1.tgz'
+Content type 'application/x-gzip' length 610060 bytes (595 KB)
+==================================================
+downloaded 595 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/gargle_1.2.1.tgz'
+Content type 'application/x-gzip' length 509888 bytes (497 KB)
+==================================================
+downloaded 497 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/uuid_1.1-0.tgz'
+Content type 'application/x-gzip' length 71153 bytes (69 KB)
+==================================================
+downloaded 69 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/cellranger_1.1.0.tgz'
+Content type 'application/x-gzip' length 100745 bytes (98 KB)
+==================================================
+downloaded 98 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/curl_4.3.3.tgz'
+Content type 'application/x-gzip' length 756969 bytes (739 KB)
+==================================================
+downloaded 739 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/ids_1.0.1.tgz'
+Content type 'application/x-gzip' length 119183 bytes (116 KB)
+==================================================
+downloaded 116 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rematch2_2.1.2.tgz'
+Content type 'application/x-gzip' length 43890 bytes (42 KB)
+==================================================
+downloaded 42 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/cpp11_0.4.3.tgz'
+Content type 'application/x-gzip' length 300090 bytes (293 KB)
+==================================================
+downloaded 293 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/pkgconfig_2.0.3.tgz'
+Content type 'application/x-gzip' length 17697 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/mime_0.12.tgz'
+Content type 'application/x-gzip' length 36161 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/openssl_2.0.4.tgz'
+Content type 'application/x-gzip' length 2485421 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/timechange_0.1.1.tgz'
+Content type 'application/x-gzip' length 882601 bytes (861 KB)
+==================================================
+downloaded 861 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/fansi_1.0.3.tgz'
+Content type 'application/x-gzip' length 379227 bytes (370 KB)
+==================================================
+downloaded 370 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/utf8_1.2.2.tgz'
+Content type 'application/x-gzip' length 209238 bytes (204 KB)
+==================================================
+downloaded 204 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/clipr_0.8.0.tgz'
+Content type 'application/x-gzip' length 50341 bytes (49 KB)
+==================================================
+downloaded 49 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/vroom_1.6.0.tgz'
+Content type 'application/x-gzip' length 3119127 bytes (3.0 MB)
+==================================================
+downloaded 3.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tzdb_0.3.0.tgz'
+Content type 'application/x-gzip' length 1216863 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/progress_1.2.2.tgz'
+Content type 'application/x-gzip' length 83510 bytes (81 KB)
+==================================================
+downloaded 81 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/callr_3.7.3.tgz'
+Content type 'application/x-gzip' length 428841 bytes (418 KB)
+==================================================
+downloaded 418 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/fs_1.5.2.tgz'
+Content type 'application/x-gzip' length 589904 bytes (576 KB)
+==================================================
+downloaded 576 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/knitr_1.41.tgz'
+Content type 'application/x-gzip' length 1445202 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rmarkdown_2.18.tgz'
+Content type 'application/x-gzip' length 3658258 bytes (3.5 MB)
+==================================================
+downloaded 3.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/selectr_0.4-2.tgz'
+Content type 'application/x-gzip' length 488388 bytes (476 KB)
+==================================================
+downloaded 476 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/stringi_1.7.8.tgz'
+Content type 'application/x-gzip' length 14520326 bytes (13.8 MB)
+==================================================
+downloaded 13.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/broom_1.0.1.tgz'
+Content type 'application/x-gzip' length 1853930 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/cli_3.4.1.tgz'
+Content type 'application/x-gzip' length 1292969 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/crayon_1.5.2.tgz'
+Content type 'application/x-gzip' length 161499 bytes (157 KB)
+==================================================
+downloaded 157 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/dbplyr_2.2.1.tgz'
+Content type 'application/x-gzip' length 973408 bytes (950 KB)
+==================================================
+downloaded 950 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/dplyr_1.0.10.tgz'
+Content type 'application/x-gzip' length 1327807 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/dtplyr_1.2.2.tgz'
+Content type 'application/x-gzip' length 328423 bytes (320 KB)
+==================================================
+downloaded 320 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/forcats_0.5.2.tgz'
+Content type 'application/x-gzip' length 375717 bytes (366 KB)
+==================================================
+downloaded 366 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/ggplot2_3.4.0.tgz'
+Content type 'application/x-gzip' length 4211193 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/googledrive_2.0.0.tgz'
+Content type 'application/x-gzip' length 1864229 bytes (1.8 MB)
+==================================================
+downloaded 1.8 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/googlesheets4_1.0.1.tgz'
+Content type 'application/x-gzip' length 489109 bytes (477 KB)
+==================================================
+downloaded 477 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/haven_2.5.1.tgz'
+Content type 'application/x-gzip' length 1068680 bytes (1.0 MB)
+==================================================
+downloaded 1.0 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/hms_1.1.2.tgz'
+Content type 'application/x-gzip' length 97473 bytes (95 KB)
+==================================================
+downloaded 95 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/httr_1.4.4.tgz'
+Content type 'application/x-gzip' length 504652 bytes (492 KB)
+==================================================
+downloaded 492 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/jsonlite_1.8.3.tgz'
+Content type 'application/x-gzip' length 1126894 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/lubridate_1.9.0.tgz'
+Content type 'application/x-gzip' length 977157 bytes (954 KB)
+==================================================
+downloaded 954 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/magrittr_2.0.3.tgz'
+Content type 'application/x-gzip' length 231251 bytes (225 KB)
+==================================================
+downloaded 225 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/modelr_0.1.10.tgz'
+Content type 'application/x-gzip' length 200927 bytes (196 KB)
+==================================================
+downloaded 196 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/pillar_1.8.1.tgz'
+Content type 'application/x-gzip' length 676781 bytes (660 KB)
+==================================================
+downloaded 660 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/purrr_0.3.5.tgz'
+Content type 'application/x-gzip' length 426247 bytes (416 KB)
+==================================================
+downloaded 416 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/readr_2.1.3.tgz'
+Content type 'application/x-gzip' length 1960780 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/readxl_1.4.1.tgz'
+Content type 'application/x-gzip' length 1545432 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/reprex_2.0.2.tgz'
+Content type 'application/x-gzip' length 495855 bytes (484 KB)
+==================================================
+downloaded 484 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rlang_1.0.6.tgz'
+Content type 'application/x-gzip' length 1825147 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rstudioapi_0.14.tgz'
+Content type 'application/x-gzip' length 292533 bytes (285 KB)
+==================================================
+downloaded 285 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/rvest_1.0.3.tgz'
+Content type 'application/x-gzip' length 211149 bytes (206 KB)
+==================================================
+downloaded 206 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/stringr_1.4.1.tgz'
+Content type 'application/x-gzip' length 214010 bytes (208 KB)
+==================================================
+downloaded 208 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tibble_3.1.8.tgz'
+Content type 'application/x-gzip' length 724320 bytes (707 KB)
+==================================================
+downloaded 707 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tidyr_1.2.1.tgz'
+Content type 'application/x-gzip' length 1010422 bytes (986 KB)
+==================================================
+downloaded 986 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/xml2_1.3.3.tgz'
+Content type 'application/x-gzip' length 463260 bytes (452 KB)
+==================================================
+downloaded 452 KB
+
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tidyverse_1.3.2.tgz'
+Content type 'application/x-gzip' length 425892 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+
+The downloaded binary packages are in
+	/var/folders/tc/cqdksz0d7sv6yxb4t3p9symm0000gn/T//Rtmp6WHPnA/downloaded_packages
+installing the source package ‘sass’
+
+trying URL 'https://cloud.r-project.org/src/contrib/sass_0.4.4.tar.gz'
+Content type 'application/x-gzip' length 3024862 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+
+The downloaded source packages are in
+	‘/private/var/folders/tc/cqdksz0d7sv6yxb4t3p9symm0000gn/T/Rtmp6WHPnA/downloaded_packages’
+Warning message:
+In install.packages("tidyverse") :
+  installation of package ‘sass’ had non-zero exit status
+> 
+> 
+> install.packages("tidyverse")
+trying URL 'https://cloud.r-project.org/bin/macosx/big-sur-arm64/contrib/4.2/tidyverse_1.3.2.tgz'
+Content type 'application/x-gzip' length 425892 bytes (415 KB)
+==================================================
+downloaded 415 KB
+
+
+The downloaded binary packages are in
+	/var/folders/tc/cqdksz0d7sv6yxb4t3p9symm0000gn/T//Rtmp6WHPnA/downloaded_packages
+> library(tidyverse)
+── Attaching packages ──────────────────────────────────────────────────────────── tidyverse 1.3.2 ──
+✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+✔ tibble  3.1.8      ✔ dplyr   1.0.10
+✔ tidyr   1.2.1      ✔ stringr 1.4.1 
+✔ readr   2.1.3      ✔ forcats 0.5.2 
+── Conflicts ─────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+> head(diamonds)
+# A tibble: 6 × 10
+  carat cut       color clarity depth table price     x     y     z
+  <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+1  0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+2  0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+3  0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+4  0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+5  0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+6  0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+> str(diamonds)
+tibble [53,940 × 10] (S3: tbl_df/tbl/data.frame)
+ $ carat  : num [1:53940] 0.23 0.21 0.23 0.29 0.31 0.24 0.24 0.26 0.22 0.23 ...
+ $ cut    : Ord.factor w/ 5 levels "Fair"<"Good"<..: 5 4 2 4 2 3 3 3 1 3 ...
+ $ color  : Ord.factor w/ 7 levels "D"<"E"<"F"<"G"<..: 2 2 2 6 7 7 6 5 2 5 ...
+ $ clarity: Ord.factor w/ 8 levels "I1"<"SI2"<"SI1"<..: 2 3 5 4 2 6 7 3 4 5 ...
+ $ depth  : num [1:53940] 61.5 59.8 56.9 62.4 63.3 62.8 62.3 61.9 65.1 59.4 ...
+ $ table  : num [1:53940] 55 61 65 58 58 57 57 55 61 61 ...
+ $ price  : int [1:53940] 326 326 327 334 335 336 336 337 337 338 ...
+ $ x      : num [1:53940] 3.95 3.89 4.05 4.2 4.34 3.94 3.95 4.07 3.87 4 ...
+ $ y      : num [1:53940] 3.98 3.84 4.07 4.23 4.35 3.96 3.98 4.11 3.78 4.05 ...
+ $ z      : num [1:53940] 2.43 2.31 2.31 2.63 2.75 2.48 2.47 2.53 2.49 2.39 ...
+> glimpse(diamonds)
+Rows: 53,940
+Columns: 10
+$ carat   <dbl> 0.23, 0.21, 0.23, 0.29, 0.31, 0.24, 0.24, 0.26, 0.22, 0.23, 0.30, 0.23, 0.22, 0.31,…
+$ cut     <ord> Ideal, Premium, Good, Premium, Good, Very Good, Very Good, Very Good, Fair, Very Go…
+$ color   <ord> E, E, E, I, J, J, I, H, E, H, J, J, F, J, E, E, I, J, J, J, I, E, H, J, J, G, I, J,…
+$ clarity <ord> SI2, SI1, VS1, VS2, SI2, VVS2, VVS1, SI1, VS2, VS1, SI1, VS1, SI1, SI2, SI2, I1, SI…
+$ depth   <dbl> 61.5, 59.8, 56.9, 62.4, 63.3, 62.8, 62.3, 61.9, 65.1, 59.4, 64.0, 62.8, 60.4, 62.2,…
+$ table   <dbl> 55, 61, 65, 58, 58, 57, 57, 55, 61, 61, 55, 56, 61, 54, 62, 58, 54, 54, 56, 59, 56,…
+$ price   <int> 326, 326, 327, 334, 335, 336, 336, 337, 337, 338, 339, 340, 342, 344, 345, 345, 348…
+$ x       <dbl> 3.95, 3.89, 4.05, 4.20, 4.34, 3.94, 3.95, 4.07, 3.87, 4.00, 4.25, 3.93, 3.88, 4.35,…
+$ y       <dbl> 3.98, 3.84, 4.07, 4.23, 4.35, 3.96, 3.98, 4.11, 3.78, 4.05, 4.28, 3.90, 3.84, 4.37,…
+$ z       <dbl> 2.43, 2.31, 2.31, 2.63, 2.75, 2.48, 2.47, 2.53, 2.49, 2.39, 2.73, 2.46, 2.33, 2.71,…
+> colnames(diamonds)
+ [1] "carat"   "cut"     "color"   "clarity" "depth"   "table"   "price"   "x"       "y"      
+[10] "z"      
+> rename(diamonds, carat_new = carat)
+# A tibble: 53,940 × 10
+   carat_new cut       color clarity depth table price     x     y     z
+       <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+ 1      0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+ 2      0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+ 3      0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+ 4      0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+ 5      0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+ 6      0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+ 7      0.24 Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+ 8      0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+ 9      0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+10      0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
+# … with 53,930 more rows
+# ℹ Use `print(n = ...)` to see more rows
+> rename(diamonds, carat_new = carat, cut_new = cut)
+# A tibble: 53,940 × 10
+   carat_new cut_new   color clarity depth table price     x     y     z
+       <dbl> <ord>     <ord> <ord>   <dbl> <dbl> <int> <dbl> <dbl> <dbl>
+ 1      0.23 Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+ 2      0.21 Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+ 3      0.23 Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+ 4      0.29 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+ 5      0.31 Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+ 6      0.24 Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+ 7      0.24 Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+ 8      0.26 Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+ 9      0.22 Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+10      0.23 Very Good H     VS1      59.4    61   338  4     4.05  2.39
+# … with 53,930 more rows
+# ℹ Use `print(n = ...)` to see more rows
+> summarize(diamonds, mean_carat = mean(carat))
+# A tibble: 1 × 1
+  mean_carat
+       <dbl>
+1      0.798
+> ggplot(data = diamonds, aes(x = carat, y = price)) +
++   geom_point()
+> ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
++   geom_point()
+> ggplot(data = diamonds, aes(x = carat, y = price, color = cut)) +
++   geom_point() +
++   facet_wrap(~cut)
+> 
